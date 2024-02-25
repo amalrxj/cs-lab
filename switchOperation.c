@@ -8,7 +8,7 @@ int main()
     scanf("%lf%lf", &num1, &num2);
     printf("\n1. Addition\n2. Substraction\n3. Multiplication\n4. Division\n");
     printf("\nEnter your choice:\n");
-    scanf("%d",&choice);
+    scanf("%d", &choice);
 
     switch (choice)
     {
