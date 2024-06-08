@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main()
 {
     int anuApples = 10, anuMangoes = 20;
