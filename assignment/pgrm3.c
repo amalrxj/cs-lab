@@ -2,7 +2,6 @@
 
 int checkEvenOdd(int num)
 {
-    // int r = num;
     if (num % 2 == 0)
     {
         printf("Number is even");
