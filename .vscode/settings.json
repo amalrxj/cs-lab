@@ -1,6 +1,7 @@
 {
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "ADD2NUM.C": "cpp"
     },
     "cmake.configureOnOpen": false
 }

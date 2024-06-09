@@ -3,11 +3,11 @@
 int main()
 {
 	int a,b,c;
-	printf("enter two numbers: ");
+	printf("enter three numbers: ");
 	scanf("%d%d%d",&a,&b,&c);
 	printf("the ans:%d", (a>b) && (a<c));
 	printf("the ans:%d", (a>b) || (a<c));
-	printf("the ans:%d", (a>b) ! (a<c));
+	printf("the ans:%d", !(a>b && a<c));
 	
 	return 0;
 }
