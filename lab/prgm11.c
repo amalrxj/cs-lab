@@ -3,7 +3,7 @@
 int main()
 {
     int n1, n2, i, j, flag;
-    printf("enter the starting and ending number");
+    printf("Enter the starting and ending numbers: ");
     scanf("%d%d", &n1, &n2);
     for (i = n1; i <= n2; i++)
     {
