@@ -3,9 +3,9 @@
 int main()
 {
     char line[100];
-    int vowels, consonant, digit, space;
-    vowels = consonant = digit = space = 0;
-    
+    int vowels, consonant, space;
+    vowels = consonant = space = 0;
+
     printf("Enter a line of string: ");
     gets(line);
 
@@ -17,13 +17,9 @@ int main()
         {
             ++vowels;
         }
-        else if ((line[i] >= 'a' && line[i] <= 'z'))
+        else if ((line[i] >= 'a' && line[i] <= 'z' || line[i] >= 'A' && line[i] <= 'Z'))
         {
             ++consonant;
-        }
-        else if (line[i] >= '0' && line[i] <= '9')
-        {
-            ++digit;
         }
         else if (line[i] == ' ')
         {
@@ -33,7 +29,6 @@ int main()
 
     printf("Vowels: %d", vowels);
     printf("\nConsonants: %d", consonant);
-    printf("\nDigits: %d", digit);
     printf("\nWhite spaces: %d", space);
 
     return 0;
