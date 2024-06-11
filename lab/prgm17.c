@@ -11,7 +11,7 @@ int main()
 
 long int multiplyNumbers(int n)//3
 {
-    if (n >= 1)
+    if (n > 1)
         return n * multiplyNumbers(n - 1);//3*2*1*1
     else
         return 1;

@@ -29,7 +29,7 @@ int main()
 			printf("\n");
 		}
 		printf("enter the resultant matrix=\n");
-	    for(i=0;i<n;i++)
+	    for(i=0;i<m;i++)
 		{
 			for(j=0;j<q;j++)
 			{
