@@ -3,11 +3,12 @@ void swap(int*,int*);
 int main()
 {
 	int a,b;
-	int *p=&a,*q=&b;
 	printf("enter two numbers");
 	scanf("%d%d",&a,&b);
+	printf("before swap a=%d and b=%d",a,b);
 	swap(&a,&b);
-	printf("the value of a=%u and b=%u",*p,*q);
+	printf("\nafter swap a=%u and b=%u",a,b);
+	
 	return 0;
 }
 void swap(int*p,int*q)
