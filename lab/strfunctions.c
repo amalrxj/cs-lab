@@ -5,12 +5,13 @@ int main()
 {
 	char str1[50],str2[50];
 	int l1,l2,result,ch;
+	while(1)
+	{
 	printf("enter the first string");
 	fgets(str1,sizeof(str1),stdin);
 	printf("\n enter the second string");
 	fgets(str2,sizeof(str2),stdin);
-	while(1)
-	{
+	
 		printf("1 length\n2 copy\n3 concatenated\n4 reversed \n5 compare");
 		printf("\n enter your choice");
 		scanf("%d",&ch);
@@ -24,7 +25,7 @@ int main()
 			        break;
 			case 3: printf("concatenated string '%s'\n",strcat(str1,str2));
 				    break;
-			case 4: printf("Reversed string: %s\n",strrev(str1));
+			case 4: printf("Reversed string: '%s'\n",strrev(str1));
 					break;	    
 			case 5: result=strcmp(str1,str2);
 			        if(result==0)
