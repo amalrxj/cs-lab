@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 void transpose(int m[10][10],int a,int b)
 {
 	int i,j,n[10][10];
