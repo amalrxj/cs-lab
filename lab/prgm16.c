@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 void print(int[10][10]);
 int main()
 {
