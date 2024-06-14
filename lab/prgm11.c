@@ -4,7 +4,7 @@ int main()
 {
     int n1, n2, i, j, flag;
     printf("Enter the starting and ending numbers: ");
-    scanf("%d%d", &n1, &n2);
+    scanf("%d%d", &n1, &n2);//3, 13
     for (i = n1; i <= n2; i++)
     {
         if (i == 1)
