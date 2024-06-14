@@ -20,6 +20,6 @@ void print(int a[10][10])
 	for(i=0;i<c;i++)
 	{
 		for(j=0;j<r;j++)
-		printf("%d",b[j][i]);
+			printf("%d",b[j][i]);
 	}
 }
