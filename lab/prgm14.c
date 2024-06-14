@@ -1,32 +1,27 @@
 #include <stdio.h>
-long int multiplyNumbers(int n);
+#include <string.h>
 int main()
 {
-    int n;
-    printf("Enter a positive integer: ");
-    scanf("%d", &n);
-    printf("Factorial of %d = %ld", n, multiplyNumbers(n));
-    return 0;
-}
-
-long int multiplyNumbers(int n)//3
-{
-    if (n >= 1)
-        return n * multiplyNumbers(n - 1);//3*2*1*1
-    else
-        return 1;
-}
-
-int main() {
     char str[100];
-    printf("Enter a string: ");
-    gets(str);  // Note: gets() is unsafe, use fgets() for safer input handling in real applications
-
-    if (isPalindrome(str)) {
-        printf("\"%s\" is a palindrome\n", str);
-    } else {
-        printf("\"%s\" is not a palindrome\n", str);
+    int len, i;
+    int palindrome = 1;
+    printf("enter the string:\n");
+    scanf("%s", str);
+    len = strlen(str);
+    for (i = 0; i < len / 2; i++)
+    {
+        if (str[i] != str[len - i - 1])
+        {
+            palindrome = 0;
+            break;
+        }
     }
-
-    return 0;
+    if (palindrome == 1)
+    {
+        printf("the string is palindrome");
+    }
+    else
+    {
+        printf("the string is not palindrome");
+    }
 }
